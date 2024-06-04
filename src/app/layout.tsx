@@ -3,6 +3,7 @@ import { Trispace } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
 import Navbar from "@/app/components/Navbar";
+import RandomNews from "./components/RandomNews";
 
 const trispace = Trispace({ subsets: ["latin"] });
 
@@ -42,7 +43,7 @@ export default function RootLayout({
           <Navbar />
           <section className="flex justify-between">
             {children}
-            {/*RandomNews*/}
+            <RandomNews/>
           </section>
         </main>
       </body>
