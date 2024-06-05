@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import SearchInput from './SearchInput'
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
           <Image src="/img/news-u-logo.webp" alt="news-u-logo" fill sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 100vw'className='object-contain'/>
         </div>
       </Link>
-      {/* SearchInput */}
+      <SearchInput/>
     </div>
   )
 }
